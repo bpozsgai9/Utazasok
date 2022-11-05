@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# myList
+.gitignore
+Utazasok/Utazasok/Db/sqlite.exe
+
 # User-specific files
 *.rsuser
 *.suo
