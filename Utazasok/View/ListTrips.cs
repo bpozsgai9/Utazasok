@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using Utazasok.Controller;
 using Utazasok.Dao;
 using Utazasok.Model;
@@ -25,7 +26,7 @@ namespace Utazasok
             var trips = controller.GetAllTrips();
 
             tripDataGridView.DataSource = null;
-            tripDataGridView.DataSource = trips;
+            tripDataGridView.DataSource = trips.OrderByDescending(e => e.Priority).ToList();
             tripDataGridView.Visible = true;
         }
 
